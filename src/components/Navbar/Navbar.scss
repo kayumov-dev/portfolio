@@ -1,5 +1,31 @@
-.something {
-    h1{
-        color: red;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 85px;
+  padding: 0 95px;
+  height: 70px;
+  background: #1b1b1b;
+  border-radius: 0 0 8px 8px;
+
+  &-links {
+    display: flex;
+    gap: 70px;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #9c9c9c;
+
+    &:hover {
+      color: white;
     }
+  }
+
+  &-menu {
+    display: flex;
+    gap: 20px;
+  }
 }
+
+
