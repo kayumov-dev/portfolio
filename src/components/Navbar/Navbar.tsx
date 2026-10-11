@@ -8,10 +8,10 @@ import github from "../../assets/svg/GitHub.svg"
 const Navbar = () => {
   return (
     <>
-    <div className={"navbar"}>
+    <header className={"navbar"}>
       <div className={"navbar-links"}>
-        <a className={"navbar-link"} href="#">Home</a>
-        <a className={"navbar-link"} href="#">Achievements</a>
+        <a className={"navbar-link"} href="#home">Home</a>
+        <a className={"navbar-link"} href="#achievements">Achievements</a>
         <a className={"navbar-link"} href="#">Testimonials</a>
         <a className={"navbar-link"} href="#">Recent work</a>
         <a className={"navbar-link"} href="#">Get In Touch</a>
@@ -33,7 +33,7 @@ const Navbar = () => {
   <img src={github} alt="GitHub" />
 </a>
       </div>
-    </div>
+    </header>
 
     
     </>

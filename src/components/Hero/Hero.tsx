@@ -6,7 +6,7 @@ import Brands from "../Brands"
 
 const Hero = () => {
   return (
-    <div className={"hero"}>
+    <section className={"hero"} id="home">
 <div className={"hero-main"}>
 <div className={"hero-content"}>
   <h1 className={"hero-title"}>Kayumov Mirislom</h1>
@@ -20,7 +20,7 @@ const Hero = () => {
 </div>
 </div>
 <Brands/>
-    </div>
+    </section>
   )
 }
 
