@@ -43,7 +43,7 @@ const shown = active === "All" ? achievements : achievements.filter((a) => a.typ
       </div>
       <div className={"achievements-list"}>
 {shown.map((a) => (
-  <div className={"achievements-card"}>
+  <div key={a.id} className={"achievements-card"}>
 <div className={"achievements-shot"}>
 {a.image && <img src={a.image} alt={a.title} />}
 <span className={"achievements-tag"}>{a.type}</span>
