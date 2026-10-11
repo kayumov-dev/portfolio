@@ -1,0 +1,27 @@
+.brands{
+    &-title {
+        font-size: 14px;
+    }
+
+    &-list {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding: 14px 24px;
+        width: 160px;
+        height: 60px;
+        border: 1px solid #1B1B1B;
+        border-radius: 6px;
+        
+        img {
+    max-width: 100px;          
+    height: auto;
+  }
+    }
+}

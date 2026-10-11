@@ -1,9 +1,16 @@
 .hero {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 57px;
     margin: 0 180px;
-    padding: 80px 0;
+    padding: 80px 0 45px 0;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
     &-title {
