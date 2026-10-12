@@ -9,8 +9,7 @@ import github from "../../assets/svg/GitHub.svg"
 const links = [
   { label: "Home", href: "#home" },
   { label: "Achievements", href: "#achievements" },
-  { label: "Testimonials", href: "#" },
-  { label: "Recent work", href: "#" },
+  { label: "Interests", href: "#" },
   { label: "Get In Touch", href: "#" },
 ]
 
@@ -23,11 +22,10 @@ const socials = [
 ]
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false)   // menyu ochiqmi
-  const ref = useRef<HTMLElement>(null)     // navbar'ning o'zi
+  const [open, setOpen] = useState(false)   
+  const ref = useRef<HTMLElement>(null)     
   const close = () => setOpen(false)
 
-  // Menyu ochiq bo'lganda: Escape yoki tashqariga bosilsa yopiladi
   useEffect(() => {
     if (!open) return
 
