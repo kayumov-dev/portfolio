@@ -31,7 +31,7 @@ const interests: Interest[] = [
     videoUrl: "",
     statLabel: "Result",
     statValue: "1st place",
-    text: "I won a football tournament at [company name].",
+    text: "I won a football tournament at Scientific Information Center for New Technologies where I worked for 2 years",
     learned: "Taught me the power of seamless teamwork, strategic coordination, and staying resilient under pressure to achieve a common goal.",
   },
   // {
