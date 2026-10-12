@@ -1,24 +1,35 @@
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: clamp(48px, 8vw, 80px) var(--side) 0;
+  padding: 28px 0 calc(40px + env(safe-area-inset-bottom));  // iPhone pastki chizig'i uchun
+  border-top: 1px solid #1b1b1b;
+  color: #9c9c9c;
+  font-size: 13px;
+
+  &-links {
     display: flex;
-    justify-content: space-between;
-    margin: 0 180px;
-    color: #9C9C9C;
-    padding: 28px 0 40px;
-    border-top: 1px solid #1b1b1b;
-    font-size: 13px;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+  }
 
-    &-links {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
+  &-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    color: #9c9c9c;
+    transition: color 0.25s;
 
-            &-link {
-            text-decoration: none;
-            color: #9C9C9C;
+    &:hover { color: white; }
+  }
 
-            &:hover {
-                color: white;
-            }
-        }
+  @media (max-width: 640px) {
+    flex-direction: column;
+    text-align: center;
+
+    &-links { justify-content: center; }
+    &-link { min-height: 44px; }
+  }
 }

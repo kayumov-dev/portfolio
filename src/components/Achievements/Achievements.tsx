@@ -25,7 +25,7 @@ const shown = active === "All" ? achievements : achievements.filter((a) => a.typ
   return (
     <section className={"achievements"} id="achievements">
       <div className={"achievements-content"}>
-<h1 className={"achievements-title"}>Achievements</h1>
+<h2 className={"achievements-title"}>Achievements</h2>
 <p className={"achievements-text"}>Awards, test scores, certificates and activities, added as they happen.</p>
 <div className={"achievements-filters"}>
 {filters.map ((f) => (
@@ -45,7 +45,7 @@ const shown = active === "All" ? achievements : achievements.filter((a) => a.typ
 {shown.map((a) => (
   <div key={a.id} className={"achievements-card"}>
 <div className={"achievements-shot"}>
-{a.image && <img src={a.image} alt={a.title} />}
+{a.image && <img src={a.image} alt={a.title} loading="lazy"/>}
 <span className={"achievements-tag"}>{a.type}</span>
 </div>
 <div className={"achievements-body"}>
