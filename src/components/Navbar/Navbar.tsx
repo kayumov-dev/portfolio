@@ -9,7 +9,7 @@ import github from "../../assets/svg/GitHub.svg"
 const links = [
   { label: "Home", href: "#home" },
   { label: "Achievements", href: "#achievements" },
-  { label: "Interests", href: "#" },
+  { label: "Interests", href: "#interests" },
   { label: "Get In Touch", href: "#" },
 ]
 

@@ -11,10 +11,10 @@ const filters = [
 ]
 
 const achievements = [
-  {id: 1, type: "Award", year: "[Year]", title: "[Olympiad or competition]", text: "[Result]", image: "", link: "#", linkText: "View certificate" },
-  {id: 2, type: "Test", year: "[Year]", title: "[SAT or IELTS result]", text: "[Score and date.]", image: "", link: "#", linkText: "View score report" },
-  {id: 3, type: "Certificate", year: "[Year]", title: "[Course name]", text: "[What you learned.]", image: "", link: "#", linkText: "View certificate" },
-  {id: 4, type: "Activity", year: "[Year]", title: "[Club or volunteering]", text: "[Your role.]", image: "", link: "#", linkText: "Read more" },
+  {id: 1, type: "Award", year: "", title: "", text: "", image: "", link: "#", linkText: "View certificate" },
+  {id: 2, type: "Test", year: "", title: "", text: "", image: "", link: "#", linkText: "View score report" },
+  {id: 3, type: "Certificate", year: "", title: "", text: "", image: "", link: "#", linkText: "View certificate" },
+  {id: 4, type: "Activity", year: "", title: "", text: "", image: "", link: "#", linkText: "Read more" },
 ]
 
 const Achievements = () => {
@@ -60,7 +60,7 @@ const shown = active === "All" ? achievements : achievements.filter((a) => a.typ
 ))}
 
 <div className={"achievements-next"}>
-Your next achievement goes here.
+Next achievement.
 </div>
       </div>
     </section>
