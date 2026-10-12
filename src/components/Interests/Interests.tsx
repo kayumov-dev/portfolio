@@ -63,7 +63,7 @@ const interests: Interest[] = [
   {
     id: 2,
     title: "Table tennis",
-    year: "[Year]",
+    year: "2025",
     kind: "photo",
     proofLabel: "Photo",
     image: tennis,              
